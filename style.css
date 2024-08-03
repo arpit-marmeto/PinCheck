@@ -120,6 +120,16 @@ input[type="text"], input[type="email"] {
     text-align: center;
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 
 @media (min-width: 1025px) {
     
