@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px); /* Adjust the height to consider the height of the nav */
+    height: calc(100vh - 60px);
 }
 
 .form-container {
@@ -44,8 +44,10 @@ nav {
 }
 
 .form-container h2 {
+    margin: 20px;
     margin-top: 0;
     text-align: center;
+    color: red;
 }
 
 .form-container p {
@@ -53,14 +55,38 @@ nav {
     margin-bottom: 20px;
 }
 
+label{
+    font-size: 12px;
+    background-color: white;
+    margin: 10px;
+    position: relative;
+    padding: 5px;
+}
+
+.checkbox-container label{
+    margin: 10px;
+    padding: 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+    accent-color: rgb(83, 120, 255); 
+    margin-top: -20px;
+}
+
 input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 10px 0;
+    margin: -10px 0 10px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="text"]:not(:placeholder-shown), input[type="email"]:not(:placeholder-shown) {
+    background-color: white; 
 }
 
 .submit-btn, .cancel-btn {
@@ -123,13 +149,11 @@ input[type="text"], input[type="email"] {
 .checkbox-container {
     display: flex;
     align-items: center;
-    /* margin-top: 10px; */
 }
 
 .checkbox-container input[type="checkbox"] {
     margin-right: 10px;
 }
-
 
 @media (min-width: 1025px) {
     
