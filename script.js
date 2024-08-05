@@ -22,6 +22,7 @@ document.getElementById('pincodeForm').addEventListener('submit', async function
     `;
 
     try {
+        
         const response = await fetch(`https://api.postalpincode.in/pincode/${pincode}`);
         const data = await response.json();
 
