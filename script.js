@@ -31,6 +31,7 @@ document.getElementById('pincodeForm').addEventListener('submit', async function
         } else {
             userDetailsHTML += `<p>${data[0].Message}</p>`;
         }
+        
     } catch (error) {
         userDetailsHTML += `<p>There was an error fetching the data.</p>`;
         console.error('Error:', error);
